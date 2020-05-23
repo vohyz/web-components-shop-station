@@ -1,0 +1,82 @@
+.host {
+  align-items: center;
+  width: 24%;
+  height: 0;
+  padding-bottom: 41.666%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  float:left;
+}
+.image {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.itemcontainer {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 160px;
+  color: #fff;
+}
+.itemcontainer > .itemtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.itemcontainer > .itemcontent {
+  font-size: 12px;
+  opacity: 0.75;
+  color: rgb(192, 192, 192);
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.itemcontainer >p> span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.rr {
+  margin-right: 1%;
+}
+
+.ll {
+  margin-left: 1%;
+}
+
+.lr {
+  margin: 0 .333% 0 .666%;
+}
+
+.rl {
+  margin: 0 .666% 0 .333%;
+}
+
+.priceBox {
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.addToCart {
+  width: 80px;
+  height: 23px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid rgb(49, 49, 49);
+  background-color: rgb(49, 49, 49);
+  float: right;
+  cursor: pointer;
+}
+
+.addToCart:hover {
+  border: 1px solid rgb(112, 255, 183);
+}

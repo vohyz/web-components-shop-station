@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/top-bar.css" />
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <template id="msgTemplate">
+        <link rel="stylesheet" type="text/css" href="../css/message.css" />
+        <div class="messagebox">
+            <div class="message"></div>
+        </div>
+    </template>
+    <div class="top">
+        <div class="container">
+            <div class="leftct">
+                <div class="logoandindex">
+                    <img id="logo" src="image/logo.png">
+                    <div class="topa r">
+                        <a href="/home" class="router">首页</a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightct">
+                <div class="topa l" id="headuser">
+                    <a href='/cart' class="router">购物车
+                </a>
+                </div>
+                <div class="topa" id="headlogin">
+                    <a href="/login" class="router">登录 <span>/</span> 注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/top-bar.js"></script>
+    <div id="router-view"></div>
+    <script src="utils/ajax.js"></script>
+    <script src="utils/message.js"></script>
+    <script src="utils/router.js"></script>
+</body>
+
+</html>

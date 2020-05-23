@@ -1,0 +1,100 @@
+.top a {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    position: relative;
+    top: -10px;
+}
+
+.top a:hover {
+    color: rgb(28, 134, 255);
+}
+
+.content {
+    height: 100%;
+    width: 60%;
+    min-width: 500px;
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.top {
+    height: 45px;
+    width: 100%;
+    background: rgb(48, 48, 48);
+}
+
+.container {
+    width: 100%;
+    border: 0;
+    height: 100%;
+    min-width: 500px;
+}
+
+.leftct {
+    float: left;
+    height: 100%;
+}
+
+.logoandindex {
+    float: left;
+    height: 100%;
+    width: 100px;
+}
+.logoandindex>a {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+img#logo {
+    height: 35px;
+    margin: 5px 15px 0 15px;
+}
+
+.rightct {
+    float: right;
+    margin-right: 50px;
+    height: 100%;
+}
+
+.background {
+    float: right;
+    margin-right: 50px;
+    height: 100%;
+}
+
+.topa {
+    cursor: pointer;
+    float: left;
+    height: 60%;
+    margin-top: 10px;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.r {
+    float: right;
+    margin-top: 13px;
+}
+
+.l {
+    float: left;
+    margin-top: 11.5px;
+}
+
+.topa>a {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.topa>a:hover {
+    color: rgb(28, 134, 255);
+}
+
+.topa>a>span {
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(28, 134, 255);
+}
