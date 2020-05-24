@@ -1,46 +1,76 @@
-.divide {
-    width:880px;
-    border:#de7814;
-    height:3px;
-    background-color:#de7814;
-}
-
-.bottomd {
-    margin-bottom:20px;
-}
-
 .cartItem {
     width: 90%;
+    height: 0;
+    padding-bottom: 30%;
     float: left;
     margin-right: 10px;
     font-size: 16px;
     list-style-type: none;
+    margin-bottom: 20px;
 }
 
 .cartItem>img {
     float: left;
+    width: 25%;
 }
 
-.cartItem>text {
+.itemRight {
+    float: left;
+    width: 75%;
+    color: #fff;
+}
+
+.itemRight>.container {
+    width: 60%;
+    float: left; 
+    min-width: 0;
+    padding-left: 15px;
+}
+
+.itemRight>.container>.title {
     margin-top: 10px;
-}
-
-.bookcover {
-    height: 192px;
-    width: 136px;
-    
-}
-
-.itemtitle {
-    margin-top: 40px;
     font-size: 22px;
     font-weight: 600;
 }
-.cartItem>.Price {
+
+.itemRight>.container>.itemContent {
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(192, 192, 192);
+}
+
+.itemRight>.priceQuantity {
     float: right;
     font-weight: 600;
-    margin-right: 50px;
     font-size: 26px;
-    color: #de7814;
-    margin-top: 25px;
+    margin-top: 8%;
+    width: 30%;
+}
+
+.itemRight>.priceQuantity>.Price {
+    padding-left: 30%;
+    margin: 0 auto;
+}
+.itemRight>.priceQuantity>.Quantity {
+    padding-left: 30%;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 0;
+}
+.mybutton {
+    width: 20px;
+    height: 20px;
+    float: left;
+    text-align: center;
+    background-color: rgb(54, 132, 177);
+    line-height: 17px;
+    cursor: pointer;
+}
+.mybutton:hover {
+    background-color: rgb(126, 206, 252);
+}
+.middle {
+    float: left;
+    line-height: 20px
 }

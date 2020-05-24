@@ -1,0 +1,83 @@
+.orderBox {
+  width: 80%;
+  margin: 10px auto;
+  height: 0;
+  padding-bottom: 40%;
+}
+
+.MessageBox {
+    width: 100%;
+    height: 0;
+    padding-bottom: 5%;
+}
+
+.orderLeft {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    float: left;
+    background-color: rgb(41, 41, 41);
+}
+
+.orderTitle {
+    width: 90%;
+    margin-left: 5%;
+    height: 0;
+    padding-bottom: 7%;
+    
+    color: #fff;
+    line-height: 40px;
+    font-size:26px;
+}
+.contentBox {
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5%;
+}
+.r {
+    margin-left: 0;
+    left: -5%;
+    margin-top: 14px;
+}
+.bracket {
+    margin-top: 45%;
+}
+
+.orderContent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.listBox {
+    width: 100%;
+    height: 0;
+    padding-bottom: 20%;
+    margin-bottom: 3%;
+    border-bottom: 2px solid rgb(185, 185, 185);
+    font-size: 24px;
+    line-height: 45px;
+    color: #fff;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.little {
+    color: #fff;
+    font-size: 20px;
+}
+.gameName {
+    
+    font-size: 20px;
+}
+.x {
+    color: rgb(28, 134, 255);
+    margin-left: 10px;
+}

@@ -10,7 +10,8 @@ function Ajax(url, msg, params, path='#', fn=null) {
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
             if (xhr.status == 200 || xhr.status == 304) {
-                msg(JSON.parse(xhr.responseText));
+                if(msg!=null)
+                    msg(JSON.parse(xhr.responseText));
                 if(fn!=null)
                     fn();
                 if(path!='#')

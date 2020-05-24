@@ -1,24 +1,8 @@
-::-webkit-scrollbar{
-    margin-right:15px;
-    background-color: #3d3d3d;
-    width: 4px;
- }
-::-webkit-scrollbar-track{
-     background-color: #3d3d3d;
- }
-::-webkit-scrollbar-track-piece{
-     background-color: #cdcdcd;
-     height: 2px;
- }
-::-webkit-scrollbar-thumb{
- background-color: #b9b9b9;
-}
-
 .cart {
   width: 80%;
   margin: 10px auto;
   height: 0;
-  padding-bottom: 50%;
+  padding-bottom: 40%;
 }
 
 .MessageBox {
@@ -54,12 +38,90 @@
     margin-left: 5%;
     height: 0;
     padding-bottom: 7%;
+    
+    color: #fff;
+    line-height: 40px;
+    font-size:26px;
+}
+.contentBox {
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5%;
+}
+.r {
+    margin-left: 0;
+    left: -5%;
+    margin-top: 14px;
+}
+.bracket {
+    margin-top: 75%;
 }
 
 .cartContent {
-    width: 90%;
-    margin-left: 5%;
-    height: 0;
-    padding-bottom: 69.2%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow-y: scroll;
+}
+
+.cartPrice {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+.listBox {
+    width: 100%;
+    height: 0;
+    padding-bottom: 20%;
+    font-size: 24px;
+    line-height: 45px;
+    color: #fff;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.allM {
+    width: 100%;
+    top: 100%;
+    color: #fff;
+    
+    font-size: 26px;
+    font-weight: 600;
+    height: 0;
+    padding-bottom: 20%;
+    margin-top: 100%;
+    text-align: center;
+}
+.get {
+    width: 50%;
+    height: 0;
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 12%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(54, 132, 177);
+    cursor: pointer;
+}
+.get:hover {
+    background-color: rgb(126, 206, 252);
+}
+.openOrder {
+    width: 100px;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(131, 131, 131);
+    cursor: pointer;
+}
+.openOrder:hover {
+    color: rgb(202, 202, 202);
 }

@@ -65,7 +65,10 @@ var route = new Route({
         component: '/file/register.html'
     }, {
         path: '/cart',
-        component: '/file/cart.html'
+        component: '/file/cart.html',
+    }, {
+        path: '/order',
+        component: '/file/order.html',
     }, {
         path: '*',
         redirect: '/home'

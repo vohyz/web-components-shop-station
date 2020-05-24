@@ -1,12 +1,21 @@
-<hr class="divide">
+<link rel="stylesheet" type="text/css" href="../css/cartItem.css" />
+
 <div class="cartItem">
     <img class="Img"/>
-    <div class="Price">
-        <p><span>$</span><span class="itemprice"></span></p>
-    </div>
-    <div class="container">
-        <p class="title"></p>
-        <p class="content"></p>
+    <div class="itemRight">
+        <div class="container">
+            <p class="title"></p>
+            <p class="itemContent"></p>
+        </div>
+        <div class="priceQuantity">
+            <div class="Price">
+                <p><span>$</span><span class="itemprice"></span></p>
+            </div>
+            <div class="Quantity">
+                <div class="mybutton" onclick="reduce(this.parentNode.parentNode.parentNode)">-</div>
+                <div class="middle"><span>x</span><span class="quantity"></span></div>
+                <div class="mybutton" onclick="add(this.parentNode.parentNode.parentNode)">+</div>
+            </div>
+        </div>
     </div>
 </div>
-<hr class="divide">

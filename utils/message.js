@@ -19,7 +19,7 @@ class Message extends HTMLElement {
         
     }
     hide() {
-        this.parentNode.removeChild(this);
+        this.parentNode.parentNode.removeChild(this.parentNode);
     }
 }
 window.customElements.define('my-message', Message);

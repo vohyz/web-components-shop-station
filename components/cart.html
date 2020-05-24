@@ -1,16 +1,41 @@
 <link rel="stylesheet" type="text/css" href="../css/cart.css" />
 <div class="cart">
     <div class="MessageBox">
+        <div class="openOrder" onclick="logout()">登出</div>
     </div>
     <div class="cartBox">
         <div class="cartLeft">
-            <div class="cartTitle">
+            <div class="cartTitle">    
+                购物车
             </div>
-            <div class="cartContent">
+            <div class="contentBox">
+                <div class="bracket"></div>
+                <div class="cartContent"></div>
             </div>
         </div>
         <div class="cartRight">
-            <div class="cartPrice"></div>
+            <div class="cartTitle">    
+                清单
+            </div>
+            <div class="contentBox r">
+                <div class="bracket"></div>
+                <div class="cartPrice"></div>
+            </div>
+            <div class="allM">
+                <span>$</span><span class="all"></span>
+            </div>
+            <div class="get" onclick="putOrder()">提交订单</div>
+            <a href="/#/order" class="router"><div class="openOrder">查看历史订单</div></a>
         </div>
     </div>
 </div>
+<template id="listTemplate">
+    <div class="listBox">
+        <div class="left">
+            <span>$</span><span class="itemprice"></span>
+        </div>
+        <div class="right">
+            <span>x</span><span class="quantity"></span>
+        </div>
+    </div>
+</template>
