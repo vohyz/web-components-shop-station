@@ -1,8 +1,8 @@
 .orderBox {
-  width: 80%;
-  margin: 10px auto;
-  height: 0;
-  padding-bottom: 40%;
+    width: 80%;
+    margin: 10px auto;
+    height: 0;
+    padding-bottom: 40%;
 }
 
 .MessageBox {
@@ -24,22 +24,24 @@
     margin-left: 5%;
     height: 0;
     padding-bottom: 7%;
-    
     color: #fff;
     line-height: 40px;
-    font-size:26px;
+    font-size: 26px;
 }
+
 .contentBox {
     width: 90%;
     position: relative;
     overflow: hidden;
     margin-left: 5%;
 }
+
 .r {
     margin-left: 0;
     left: -5%;
     margin-top: 14px;
 }
+
 .bracket {
     margin-top: 45%;
 }
@@ -55,28 +57,32 @@
 
 .listBox {
     width: 100%;
-    height: 0;
-    padding-bottom: 20%;
+    height: auto;
+    overflow: hidden;
     margin-bottom: 3%;
     border-bottom: 2px solid rgb(185, 185, 185);
     font-size: 24px;
     line-height: 45px;
     color: #fff;
 }
+
 .left {
     float: left;
 }
+
 .right {
     float: right;
 }
+
 .little {
     color: #fff;
     font-size: 20px;
 }
+
 .gameName {
-    
     font-size: 20px;
 }
+
 .x {
     color: rgb(28, 134, 255);
     margin-left: 10px;
