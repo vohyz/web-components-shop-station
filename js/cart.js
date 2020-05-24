@@ -15,11 +15,14 @@ function itemLoad() {
 }
 
 function init(e) {
-	e = e["errmsg"];
-	for(let i=0;i<e.length;i++) {
-		let temp = document.createElement('div');
-		temp.innerHTML = `<cart-item image="`+e[i][8]+`" title="`+e[i][2]+`" price="`+e[i][6]+`" content="`+e[i][5]+`" quantity="`+e[i][3]+`"></my-item>`;
-		document.querySelector(".cartContent").appendChild(temp);
+	document.querySelector(".cartContent").innerHTML = '';
+	if(e['errno']=='ok'){
+		e = e["errmsg"];
+		for(let i=0;i<e.length;i++) {
+			let temp = document.createElement('div');
+			temp.innerHTML = `<cart-item image="`+e[i][8]+`" title="`+e[i][2]+`" price="`+e[i][6]+`" content="`+e[i][5]+`" quantity="`+e[i][3]+`"></my-item>`;
+			document.querySelector(".cartContent").appendChild(temp);
+		}
 	}
 	getList();
 }
@@ -53,8 +56,8 @@ function putOrder() {
         id: id,
     }
     let params = JSON.stringify(data);
-    function a(){Ajax('/api/putOrder', showMessage, params);}
-    a();
+    function a(){Ajax('/api/putOrder', showMessage, params, '#', itemLoad);}
+	a();
 }
 
 if(listitem!=1) {

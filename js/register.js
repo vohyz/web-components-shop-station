@@ -8,6 +8,6 @@ function register() {
         email: email
     }
     let params = JSON.stringify(data);
-    function a(){Ajax('/api/register', showMessage, params, '/home')};
+    function a(){Ajax('/api/register', showMessage, params, '/login')};
     a();
 }

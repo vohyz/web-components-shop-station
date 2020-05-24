@@ -44,6 +44,14 @@ class Route {
                 window.location.hash = this.routes[defaultIndex].redirect;
             }
         }
+        let id = localStorage.getItem('ID');
+        if (id != null) {
+            document.querySelector('#headlogin').style.display = 'none';
+            document.querySelector('#headuser').style.display = 'block';
+        } else {
+            document.querySelector('#headuser').style.display = 'none';
+            document.querySelector('#headlogin').style.display = 'block';
+        }
     };
 
     jump(url) {

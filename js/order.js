@@ -13,17 +13,17 @@ function init(e) {
 	console.log(e)
 	let temp = document.createElement('div');
 	for(let i=0;i<e.length;i++) {
-		temp.innerHTML += `<list-item data='`+JSON.stringify(e[i])+`'></list-item>`;
+		temp.innerHTML += `<order-item data='`+JSON.stringify(e[i])+`'></order-item>`;
 	}
 	document.querySelector(".orderContent").appendChild(temp);
 }
 itemLoad();
 
-if(listitem!=1) {
-    class ListItem extends HTMLElement {
+if(Orderitem!=1) {
+    class OrderItem extends HTMLElement {
         constructor() {
             super();
-            var templateElem = document.getElementById('listTemplate');
+            var templateElem = document.getElementById('OrderTemplate');
 			var content = templateElem.content.cloneNode(true);
 			var data =this.getAttribute('data');
 			console.log(data)
@@ -38,6 +38,6 @@ if(listitem!=1) {
             this.appendChild(content);
         }
     }
-    window.customElements.define('list-item', ListItem);
+    window.customElements.define('order-item', OrderItem);
 }
-var listitem = 1;
+var Orderitem = 1;
